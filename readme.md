@@ -57,6 +57,7 @@ This platform enables students to enroll in courses, track progress, submit assi
 
 ## 📂 Project Structure
 
+```text
 LMS-TOMATO/
 ├── src/
 │   └── main/
@@ -132,7 +133,6 @@ LMS-TOMATO/
 ├── out3.txt                  # Temporary debug file
 ├── pom.xml                   # Maven dependencies and configuration
 └── README.md                 # Project documentation
-
 ---
 
 ## 🧠 Architecture Explanation
