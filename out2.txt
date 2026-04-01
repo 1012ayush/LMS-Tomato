@@ -1,0 +1,2 @@
+﻿Table	Create Table
+courses	CREATE TABLE `courses` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `title` varchar(200) NOT NULL,\n  `description` text,\n  `full_description` text,\n  `instructor_id` int DEFAULT NULL,\n  `thumbnail` varchar(255) DEFAULT NULL,\n  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,\n  PRIMARY KEY (`id`),\n  KEY `instructor_id` (`instructor_id`),\n  CONSTRAINT `courses_ibfk_1` FOREIGN KEY (`instructor_id`) REFERENCES `users` (`id`) ON DELETE SET NULL\n) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
